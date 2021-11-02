@@ -25,6 +25,7 @@ class OtsuBinarization(Binarization):
             t = w_0*w_1*(m_0 - m_1)**2
             thresholds[k] = t
 
-        self.img = np.where(self.img > np.argmax(thresholds), 255, 0)
-        print(np.argmax(thresholds))
+        self.binarize_thr = np.argmax(thresholds)
+        self.img = np.where(self.img > self.binarize_thr, 255, 0)
+
         return self.img
