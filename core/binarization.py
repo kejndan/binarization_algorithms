@@ -13,7 +13,7 @@ class Binarization:
         cv2.imwrite(path, self.img)
 
     def show_img(self):
-        plt.imshow(self.img)
+        plt.imshow(self.img, cmap='gray')
         plt.axis(False)
         plt.show()
 
