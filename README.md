@@ -1,4 +1,4 @@
-#Binarization Algorithms
+# Binarization Algorithms
 
 ## Original Image 
 ![](examples/lena.jpg)
